@@ -1,16 +1,29 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Loading from "./Loading";
 
 function Card({ addToCart }) {
   const host = import.meta.env.VITE_HOST;
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get(`${host}/menu`)
-      .then((res) => setProducts(res.data))
+      .then((res) => {
+        setProducts(res.data);
+        setLoading(false);
+      })
       .catch((err) => console.log(err));
   }, [host]);
+
+  if (loading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
+  }
 
   return (
     <div className="mb-40 justify-center items-center p-10 grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-sm:grid-cols-1">

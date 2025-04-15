@@ -133,5 +133,81 @@
       "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20240610114853_1717987733636_Uq2ZKYINXZ.jpg"
     }
   ],
-  "cart": []
+  "orders": [
+    {
+      "0": {
+        "id": 1,
+        "title": "헛개리카노",
+        "price": 3900,
+        "description": "국내산 헛개수와 메가MGC커피만의 아메리카노를 더해 고소한 맛이 조화로운 블렌딩 커피",
+        "category": {
+          "hot": true,
+          "cold": false
+        },
+        "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000737_1742396857693_ngpZI3EbLM.jpg",
+        "quantity": 1
+      },
+      "id": "5572"
+    },
+    {
+      "0": {
+        "id": 3,
+        "title": "제로 부스트 에이드",
+        "price": 3500,
+        "description": "지친 현대인들에게 필요한 한 잔의 에너지! 타우린 1,000mg이 들어가 활력이 충전되는 에너지드링크맛 제로 칼로리 에이드",
+        "category": {
+          "hot": false,
+          "cold": true
+        },
+        "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000925_1742396965069_ekSqAIVc1L.jpg",
+        "quantity": 1
+      },
+      "id": "43f5"
+    },
+    {
+      "0": {
+        "id": 2,
+        "title": "(ICE)헛개리카노",
+        "price": 4300,
+        "description": "국내산 헛개수와 메가MGC커피만의 아메리카노를 더해 고소한 맛이 조화로운 블렌딩 커피",
+        "category": {
+          "hot": false,
+          "cold": true
+        },
+        "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000925_1742396965069_ekSqAIVc1L.jpg",
+        "quantity": 6
+      },
+      "id": "1c64"
+    },
+    {
+      "0": {
+        "id": 4,
+        "title": "블루베리요거트스무디",
+        "price": 4000,
+        "description": "새콤달콤한 블루베리와 산뜻한 요거트가 만나 조화로운 스무디",
+        "category": {
+          "hot": true,
+          "cold": false
+        },
+        "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20250320003134_1742398294871_z9t_oXfbA6.jpg",
+        "quantity": 1
+      },
+      "id": "9f5d"
+    },
+    {
+      "0": {
+        "id": 1,
+        "title": "헛개리카노",
+        "price": 3900,
+        "description": "국내산 헛개수와 메가MGC커피만의 아메리카노를 더해 고소한 맛이 조화로운 블렌딩 커피",
+        "category": {
+          "hot": true,
+          "cold": false
+        },
+        "image": "https://img.79plus.co.kr/megahp/manager/upload/menu/20250320000737_1742396857693_ngpZI3EbLM.jpg",
+        "quantity": 1
+      },
+      "id": "b885"
+    }
+  ]
 }

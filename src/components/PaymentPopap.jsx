@@ -1,11 +1,27 @@
+import axios from "axios";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function PaymentPopap({ cart, toggleModal, deleteOnCart }) {
+  const host = import.meta.env.VITE_HOST;
+  const navigate = useNavigate();
+
   useEffect(() => {
     if (cart.length == 0) {
       toggleModal();
     }
   }, [cart, toggleModal]);
+
+  const handleClick = () => {
+    axios
+      .post(`${host}/orders`, cart)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+  };
+
+  // console.log(cart);
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -44,7 +60,10 @@ function PaymentPopap({ cart, toggleModal, deleteOnCart }) {
                 <span className="text-2xl font-light max-sm:text-lg">₩</span>
               </p>
             </div>
-            <button className="cursor-pointer bg-amber-300 rounded-xl lg:py-4">
+            <button
+              className="cursor-pointer bg-amber-300 rounded-xl lg:py-4"
+              onClick={handleClick}
+            >
               결제하기
             </button>
             <button
