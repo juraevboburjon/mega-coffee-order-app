@@ -24,7 +24,9 @@ const AdminPage = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3000/admin");
+      const response = await fetch(
+        "https://json-server-data-udg3.onrender.com/admin"
+      );
       const admins = await response.json();
       const admin = admins.find(
         (admin) =>
